@@ -209,6 +209,8 @@ plt.subplot(1,2,2)
 plt.pie(mt_salemon,labels = mt_salemon.index,autopct = '%1.1f%%', startangle = 140, colors = get_colors(mt_salemon))
 # 为第二个子图设置标题，字体大小为 12
 plt.title('各主类别销售额占比',fontsize = 12)
+#使用 tight_layout 调整子图布局
+plt.tight_layout()
 plt.show()
 
 ##利用for循环穿件多个柱状图与折线图
